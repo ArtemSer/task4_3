@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A-Rchiv</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Web-Site with my faivorite articles"/>
+  <meta name="author" content="ArtemSer">
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="./images/favicon/64x64.png" sizes="64x64">
+  <link href="./css/vendor.min.css" rel="stylesheet"/>
+  <link href="./css/style.css" rel="stylesheet"/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="hidden bg-change">
+<div id="page-content">
+  <header class="hidden">
+    <div id="logo">
+      <a href="index.html">
+        <img class="black-logo" src="./images/logo/dark.png" alt="Logo Black">
+        <img class="white-logo" src="./images/logo/light.png" alt="Logo White">
+      </a>
+    </div>
+    <div id="loader-mask" class="disable">
+      <div id="loader"></div>
+    </div>
+    <div id="close-project" class="disable">
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <div id="main">
+    <div id="showcase-gallery">
+      <div class="showcase-img" data-aux="battleground" data-src="./images/backgrounds/battleground.jpg"></div>
+      <div class="showcase-img light-content" data-aux="devil-and-denial" data-src="./images/backgrounds/devil-and-denial.jpg"></div>
+    </div>
+    <div id="main-content">
+      <div id="intro">
+        <div class="outer">
+          <div class="inner">
+            <div class="title-intro">Привет, друг, это - <b>Архив</b>.</div>
+            <div class="subtitle-intro">
+              Ты сейчас находишься в моем архиве интересных и необычных стайтей и рассказов.
+              Ниже ты найдешь их список.
+            </div>
+            <div class="scroll-down disable">
+              <div class="arrow-top"></div>
+              <div class="arrow-top-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Intro Section -->
+      <!-- Showcase List -->
+      <div id="showcase">
+        <div class="outer">
+          <div class="inner">
+            <ul class="showcase-list">
+              <li><a data-url="./archiv/battleground.html" data-aux="battleground">Поле Боя<span>Стивен Кинг</span></a></li>
+              <li><a data-url="./archiv/devil-and-denial.html" data-aux="devil-and-denial">Дьявол и Дэниел Уэбстер<span>Стивен Винсент Бене</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/Showcase List -->
+
+
+      <!-- Contact Section -->
+      <div id="contact">
+
+        <h4>Контакты</h4>
+        <p>
+          Если тебе понавился проект и ты хочешь помочь или поддержать его
+          - смело кликай на ссылки моих социальных сетей ниже
+        </p>
+        <p class="hidden">
+          Если хочешь предложить свой  <b>рассказ</b> или <b>статью</b> на рассмотрение - воспользуйся формой ниже.
+        </p>
+
+        <div id="contact-formular" class="hidden">
+
+
+          <form method="post" action="contact.php" name="contactform" id="contactform">
+            <div class="name-box">
+              <input name="name" type="text" id="name" size="30" placeholder="ФИО">
+              <label for="name" class="input_label"></label>
+            </div>
+            <div class="email-box">
+              <input name="email" type="text" id="email" size="30" placeholder="E-mail">
+              <label for="email" class="input_label"></label>
+            </div>
+            <div class="message-box">
+              <input name="comment" type="text" id="comment" size="30" placeholder="Ссылка на текст">
+              <label for="comment" class="input_label"></label>
+            </div>
+            <div class="submit-box">
+              <input type="submit" class="send_message cillar-button" id="submit" value="Отправить"/>
+            </div>
+          </form>
+        </div>
+
+
+        <p><strong>Адрес</strong><br>Дрезден, Саксония, Германия</p>
+        <p><strong>Социальные сети</strong><br>
+          <a target="_blank" href="https://facebook.com/" class="link"><span>Фейсбук</span></a>,
+          <a target="_blank" href=" https://vk.com/artem__ser" class="link"><span>ВКонтакте</span></a>,
+          <a target="_blank" href="https://twitter.com/Artem__Ser" class="link"><span>Твиттер</span></a>,
+          <a target="_blank" href="https://www.behance.net/artem.ser" class="link"><span>Инстаграм</span></a>
+        </p>
+
+
+        <p class="copyright">2020-Сегодня © А-Рхив.</p>
+
+      </div>
+      <!--/Contact Section -->
+
+
+    </div>
+    <!--/Main Content -->
+
+  </div>
+  <!--/Main -->
+  <!-- Project Holder -->
+  <div id="project-holder">
+    <div id="project-data"></div>
+  </div>
+  <!--/Project Holder -->
+</div>
+<!--/Page Content -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/plugins.js"></script>
+<script src="./js/scripts.js"></script>
+
+</body>
+</html>
